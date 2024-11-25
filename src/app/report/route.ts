@@ -1,7 +1,7 @@
 import { sendAnalyticsEvent } from "@/utils/analytics";
 import { Redis } from "@upstash/redis";
 import { redirect } from "next/navigation";
-import { NextRequest, NextResponse } from "next/server";
+import { NextRequest } from "next/server";
 
 const redis = Redis.fromEnv();
 
