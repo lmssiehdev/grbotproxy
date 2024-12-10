@@ -2,6 +2,7 @@ export function sendAnalyticsEvent(payload: {
   event: string;
   properties?: Record<string, string | number>;
 }) {
+  return;
   fetch("https://us.i.posthog.com/capture/", {
     method: "POST",
     cache: "no-cache",
